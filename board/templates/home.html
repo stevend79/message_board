@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Board</title>
+</head>
+<body>
+    <h1>Message Board</h1>
+    <ul>
+    {% for message in messages %}
+        <li><strong>{{ message.date_posted }}:</strong> {{ message.text }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
